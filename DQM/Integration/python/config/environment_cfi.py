@@ -22,9 +22,16 @@ def loadDQMRunConfigFromFile():
 dqmRunConfigDefaults = {
     'userarea': cms.PSet(
         type = cms.untracked.string("userarea"),
-        collectorPort = cms.untracked.int32(9190),
+        collectorPort = cms.untracked.int32(8070),
+        #collectorHost = cms.untracked.string('dqm/online-dev.cms'),
         collectorHost = cms.untracked.string('127.0.0.1'),
+
     ),
+    #'userarea': cms.PSet(
+    #    type = cms.untracked.string("userarea"),
+    #    collectorPort = cms.untracked.int32(9190),
+    #    collectorHost = cms.untracked.string('127.0.0.1'),
+    #),
     'playback': cms.PSet(
         type = cms.untracked.string("playback"),
         collectorPort = cms.untracked.int32(9090),
@@ -74,7 +81,8 @@ from DQMServices.Components.DQMEventInfo_cfi import *
 from DQMServices.FileIO.DQMFileSaverOnline_cfi import *
 
 # upload should be either a directory or a symlink for dqm gui destination
-dqmSaver.path = "./upload" 
+dqmSaver.path = "./" 
+#dqmSaver.path = "./upload" 
 dqmSaver.tag = "PID%06d" % os.getpid()
 dqmSaver.producer = 'DQM'
 dqmSaver.backupLumiCount = 15
@@ -82,7 +90,8 @@ dqmSaver.backupLumiCount = 15
 # Add Protobuf DQM saver
 from DQMServices.FileIO.DQMFileSaverPB_cfi import dqmSaver as dqmSaverPB
 
-dqmSaverPB.path = './upload/pb'
+dqmSaverPB.path = './pb'
+#dqmSaverPB.path = './upload/pb'
 dqmSaverPB.tag = 'PID%06d' % os.getpid()
 dqmSaverPB.producer = 'DQM'
 dqmSaverPB.fakeFilterUnitMode = True

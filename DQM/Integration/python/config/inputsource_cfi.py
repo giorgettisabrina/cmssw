@@ -23,6 +23,7 @@ options.register('datafnPosition',
 
 options.register('runInputDir',
                  '/tmp',
+                 #'/dqmdata',
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.string,
                  "Directory where the DQM files will appear.")

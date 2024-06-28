@@ -21,7 +21,8 @@ options.register('datafnPosition',
                  "Data filename position in the positional arguments array 'data' in json file.")
 
 options.register('runInputDir',
-                 '/tmp',
+                 #'/tmp',
+                 '/dqmdata',
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.string,
                  "Directory where the DQM files will appear.")
@@ -67,7 +68,8 @@ options.register('runUniqueKey',
 # Note, the other clients do not use this input parameter
 
 options.register('outputBaseDir',
-                 '/fff/BU0/output',
+                 #'/fff/BU0/output',
+                 '/data/srv/state/dqmgui/online/data/OnlineData/',
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.string,
                  "Directory where the visualization output files will appear.")
@@ -108,10 +110,10 @@ source = cms.Source("DQMProtobufReader",
 )
 
 # https://twiki.cern.ch/twiki/bin/viewauth/CMS/CMSBeamSplash2017
-def set_BeamSplashRun_settings( source ):
-  # source.minEventsPerLumi      = 1000000
-  source.nextLumiTimeoutMillis = 15000
+#def set_BeamSplashRun_settings( source ):
+#  # source.minEventsPerLumi      = 1000000
+#  source.nextLumiTimeoutMillis = 15000
 
-if options.BeamSplashRun : set_BeamSplashRun_settings( source )
+#if options.BeamSplashRun : set_BeamSplashRun_settings( source )
 
 print("Initial Source settings:", source)
