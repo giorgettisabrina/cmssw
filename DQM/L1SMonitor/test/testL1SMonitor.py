@@ -22,13 +22,17 @@ process.options = cms.untracked.PSet(
     numberOfConcurrentLuminosityBlocks = cms.untracked.uint32(1),
 )
 
+process.load("FWCore.MessageService.MessageLogger_cfi")
+process.MessageLogger.cerr.FwkReport.reportEvery = 100000
+
 # Maximum number of events to process
 process.maxEvents = cms.untracked.PSet(input=cms.untracked.int32(-1))
 
 # Source definition (example file in the same folder as the script)
 process.source = cms.Source("PoolSource",
     fileNames = cms.untracked.vstring(
-        'file:run380346_cc332979-2afa-48f9-b02e-cfca4d3a22d7.root',  # Adjust path here
+        'root://xrootd-cms.infn.it//store/data/Run2024D/L1Scouting/L1SCOUT/v1/000/380/346/00000/1648bf25-aa3d-4baa-a4af-aaceaa36774c.root',  
+        #'file:run380346_cc332979-2afa-48f9-b02e-cfca4d3a22d7.root',  # Adjust path here
     )
 )
 
