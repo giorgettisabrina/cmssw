@@ -81,7 +81,7 @@ void L1SMonitor::fillDescriptions(edm::ConfigurationDescriptions& descriptions) 
   desc.add<edm::InputTag>("jetsTag", edm::InputTag("l1ScCaloUnpacker"));
   desc.add<edm::InputTag>("eGammasTag", edm::InputTag("l1ScCaloUnpacker"));
   desc.add<edm::InputTag>("tausTag", edm::InputTag("l1ScCaloUnpacker"));
-  desc.addUntracked<std::string>("dqmPath", "/L1TScouting/DQM/Test");
+  desc.addUntracked<std::string>("dqmPath", "/L1Scouting/BX/Occupancy");
   descriptions.add("L1SMonitor", desc);
 }
 
