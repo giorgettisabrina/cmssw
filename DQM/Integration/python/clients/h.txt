@@ -1,0 +1,1016 @@
+  150  mv JobConfig SITECONF/
+  151  mv PhEDEx/SI
+  152  mv PhEDEx SITECONF/
+  153  mv storage.json SITECONF/
+  154  cd SITECONF/
+  155  ls
+  156  mkdir local
+  157  mv * local/
+  158  ls
+  159  scp -r chuh@lxplus.cern.ch:/cvmfs/cms.cern.ch/SITECONF/T1_IT_CNAF .
+  160  ls
+  161  cd ../
+  162  ls
+  163  export SITECONFIG_PATH=./SITECONF/local/
+  164  cmsRun scDQM_dqm_cfg.py 
+  165  ls
+  166  vi scDQM_dqm_cfg.py 
+  167  cmsRun scDQM_dqm_cfg.py 
+  168  ll
+  169  vi scDQM_dqm_cfg.py 
+  170  ls
+  171  cd CMSSW_14_1_0_pre1/src/
+  172  clear
+  173  ls
+  174  cmsenv
+  175  source /cvmfs/cms.cern.ch/cmsset_default.sh
+  176  cmsenv
+  177  export SITECONFIG_PATH=./SITECONF/local/
+  178  ls
+  179  cd DQM/
+  180  ls
+  181  cd L1SMonitor/
+  182  ls
+  183  cd python/
+  184  ls
+  185  cmsRun scDQM_dqmPB_cfg.py 
+  186  export SITECONFIG_PATH=./SITECONF/local/
+  187  cmsRun scDQM_dqmPB_cfg.py 
+  188  history
+  189  export SITECONFIG_PATH=./SITECONF/local/
+  190  cmsRun scDQM_dqm_cfg.py
+  191  ls
+  192  cd ..
+  193  ls
+  194  cd test/
+  195  ls
+  196  cmsRun scDQM_dqm_cfg.py
+  197  ls
+  198  cd ..
+  199  ls
+  200  cd python/
+  201  ls
+  202  vim scDQM_dqmPB_cfg.py 
+  203  cmsRun scDQM_dqmPB_cfg.py 
+  204  export SITECONFIG_PATH=./SITECONF/local/
+  205  cmsRun scDQM_dqmPB_cfg.py 
+  206  ls
+  207  cd ..
+  208  ls
+  209  ls data/
+  210  la
+  211  ls
+  212  ls data/
+  213  ls plugins/
+  214  ls test/
+  215  cd test/
+  216  ls
+  217  vim scDQM_dqm_cfg.py 
+  218  cd /eos/user/s/sagiorge/
+  219  cd /cvmfs
+  220  ls
+  221  cd ..
+  222  ls
+  223  cd 
+  224  ls
+  225  cd /eos/
+  226  ls
+  227  cd home-s/
+  228  ls home-s/ 
+  229  cd home-a/
+  230  cd /eos/user/s/sagiorge/
+  231  cd
+  232  /usr/bin/locmap --list
+  233  cd /eos/user/s/sagiorge/ 
+  234  kinit
+  235  kinit SAGIORGE
+  236  cd /eos/user/s/sagiorge/ 
+  237  cd /afs/cern.ch/user/s/sagiorge
+  238  ls
+  239  cd
+  240  cd ls
+  241  ls
+  242  cd CMSSW_14_1_0_pre1/
+  243  cd src/
+  244  ls
+  245  cd DQM
+  246  ls
+  247  cd L1SMonitor/
+  248  ls
+  249  cd test/
+  250  ls
+  251  vim scDQM_dqm_harvesting_cfg.py 
+  252  vim scDQM_dqm_cfg.py 
+  253  cd ..
+  254  ls
+  255  cd python/
+  256  ls
+  257  vim scDQM_dqmPB_cfg.py 
+  258  cmsRun scDQM_dqmPB_cfg.py 
+  259  ls
+  260  cd ../test/
+  261  ls
+  262  cp run380074_ls1360_streamL1ScoutingSelection.root ../python/
+  263  ls
+  264  cd ..
+  265  cd python/
+  266  ls
+  267  vim scDQM_dqmPB_cfg.py 
+  268  cmsRun scDQM_dqmPB_cfg.py 
+  269  source /cvmfs/cms.cern.ch/cmsset_default.sh
+  270  export SITECONFIG_PATH=./SITECONF/local/
+  271  cmsRun scDQM_dqmPB_cfg.py 
+  272  voms-proxy-init -voms cms -rfc
+  273  cmsenv
+  274  cmsRun scDQM_dqmPB_cfg.py 
+  275  ls
+  276  cd ..
+  277  ls
+  278  cd test/
+  279  ls
+  280  ls SITECONF/
+  281  cd ..
+  282  ls
+  283  cd test/
+  284  ls
+  285  cp -r SITECONF/ ../python/
+  286  cd ..
+  287  ls
+  288  cd python/
+  289  ls
+  290  cmsRun scDQM_dqmPB_cfg.py
+  291  ls
+  292  vim scDQM_dqmPB_cfg.py 
+  293  cmsRun scDQM_dqmPB_cfg.py
+  294  ls
+  295  ls -a
+  296  cmsRun scDQM_dqmPB_cfg.py
+  297  ls
+  298  cd
+  299  ls
+  300  cd
+  301  ls
+  302  cd ..
+  303  ls
+  304  cd
+  305  cd original-ks.cfg 
+  306  cd
+  307  ls
+  308  cd CMSSW_14_1_0_pre1/src/
+  309  ls
+  310  cmsenv
+  311  scramv1 v
+  312  scramv1 b
+  313  cd DQM
+  314  ls
+  315  cd L1SMonitor/
+  316  ls
+  317  cd python/
+  318  ls
+  319  cmsRun scDQM_dqmPB_cfg.py 
+  320  ls
+  321  cd ..
+  322  ls
+  323  mv L1SMonitor/ scDQM
+  324  cd scDQM/
+  325  ls
+  326  cd python/
+  327  ls
+  328  cd ..
+  329  ls
+  330  cd scDQM/
+  331  ls
+  332  cd python/
+  333  ls
+  334  cd ..
+  335  scramv1 b
+  336  ls
+  337  cd python/
+  338  ls
+  339  cmsRun scDQM_dqmPB_cfg.py 
+  340  ls
+  341  cd ..
+  342  ls
+  343  cd ..
+  344  scramv1 b clean
+  345  ls
+  346  cd scDQM/
+  347  scramv1 b+
+  348  scramv1 b
+  349  Ãls
+  350  ls
+  351  cd pu
+  352  cd python/
+  353  ls
+  354  cmsRun scDQM_dqmPB_cfg.py 
+  355  ls
+  356  Ãcd ..
+  357  cd ..
+  358  cd
+  359  cd CMSSW_14_1_0_pre1/src/
+  360  ls
+  361  cd DQM
+  362  ls
+  363  mkdir L1Scouting
+  364  cd t
+  365  cd te
+  366  ls
+  367  cd xxx/
+  368  ls
+  369  cp -r * ../L1Scouting/
+  370  cd ..
+  371  ls
+  372  cd L1Scouting/
+  373  ls
+  374  cd ..
+  375  rm -rf xxx/
+  376  scramv1 b
+  377  ls
+  378  ls L1Scouting/plugins/
+  379  pwd
+  380  cd L1Scouting/python/
+  381  ls
+  382  cmsRun scDQM_dqmPB_cfg.py 
+  383  ls
+  384  cmsRun scDQM_dqmPB_cfg.py 
+  385  ls
+  386  vim detailedInfo.log 
+  387  kinit
+  388  export EOS_MGM_URL=root://eosuser.cern.ch
+  389  cd /eos/user/s/sagiorge
+  390  cd
+  391  kinit SAGIORGE
+  392  export EOS_MGM_URL=root://eosuser.cern.ch
+  393  cd /eos/user/s/sagiorge/
+  394  kinit
+  395  cd CMSSW_14_1_0_pre1/src/
+  396  scram b clean
+  397  scram b -j4
+  398  cd DQM
+  399  ls
+  400  scram b -j4
+  401  ls
+  402  cd L1Scouting/python/
+  403  ls
+  404  cmsRun scDQM_dqmPB_cfg.py 
+  405  Ãls
+  406  ls
+  407  vim detailedInfo.log 
+  408  cmsRun scDQM_dqmPB_cfg.py 
+  409  ls
+  410  cd ..
+  411  cd test/
+  412  ls
+  413  cmsRun scDQM_dqmPB_cfg.py
+  414  ls
+  415  cmsRun scDQM_dqm_cfg.py
+  416  ls
+  417  clear
+  418  ls -lsh
+  419  cmsRun scDQM_dqm_cfg.py
+  420  ls
+  421  cd ..
+  422  ls
+  423  cd ..
+  424  ls
+  425  cd ..
+  426  ls
+  427  cp -r /afs/cern.ch/user/s/sagiorge/private/CMSSW_14_1_0_pre1/src/scDQM .
+  428  ls
+  429  cd scDQM/
+  430  scramv1 b
+  431  ls
+  432  cd scDQM/python/
+  433  ls
+  434  rm -rf run379243/
+  435  cmsRun scDQM_analyzerPB_cfg.py
+  436  cp ../../../DQM/L1Scouting/python/run380074_ls1360_streamL1ScoutingSelection.root .
+  437  ls
+  438  cmsRun scDQM_analyzerPB_cfg.py
+  439  cd ..
+  440  ls
+  441  cd DQM
+  442  ls
+  443  cd ..
+  444  ls
+  445  rm -rf scDQM/
+  446  scramv1 b
+  447  cd DQM
+  448  ls
+  449  cd HLTEvF/
+  450  ls
+  451  cd test/
+  452  ls
+  453  cmsRun testTriggerMonitors_dqm_cfg.py
+  454  export SITECONFIG_PATH=/root/CMSSW_14_1_0_pre1/src/DQM/L1SMonitor/test/SITECONF/local/
+  455  cmsRun testTriggerMonitors_dqm_cfg.py
+  456  cd ..
+  457  ls
+  458  cd L1Scouting/test/
+  459  ls
+  460  ls SITECONF/
+  461  ls SITECONF/local/
+  462  ls SITECONF/local/JobConfig/
+  463  cd ..
+  464  ls
+  465  cd L1Scouting/
+  466  ls
+  467  cd test/
+  468  ls
+  469  cmsRun scDQM_dqm_harvesting_cfg.py 
+  470  cmsRun scDQM_dqm_cfg.py 
+  471  export SITECONFIG_PATH=./SITECONF/local/
+  472  cmsRun scDQM_dqm_cfg.py 
+  473  cmsRun scDQM_dqm_harvesting_cfg.py 
+  474  cd ..
+  475  ls
+  476  cd L1Scouting/
+  477  ls
+  478  cd python/
+  479  ls
+  480  vim detailedInfo.log 
+  481  cd ..
+  482  scramv1 b
+  483  Ãls
+  484  ls
+  485  cd L1Scouting/python/
+  486  ls
+  487  cmsRun scDQM_dqmPB_cfg.py
+  488  ls
+  489  vim detailedInfo.log 
+  490  cmsRun scDQM_dqmPB_cfg.py >& scDQM_dqmPB.log
+  491  vim scDQM_dqmPB.log 
+  492  cmsRun scDQM_dqmPB_cfg.py >& scDQM_dqmPB.log
+  493  vim scDQM_dqmPB.log
+  494  ls
+  495  rm detailedInfo.log
+  496  rm scDQM_dqmPB.log
+  497  ls
+  498  cmsRun scDQM_dqmPB_cfg.py 
+  499  exit
+  500  ls
+  501  cd CMSSW_14_1_0_pre1/src/DQM/L1SMonitor/
+  502  ls
+  503  source /cvmfs/cms.cern.ch/cmsset_default.sh
+  504  cmsenv
+  505  export SITECONFIG_PATH=./SITECONF/local/
+  506  cmsRun scDQM_dqm_cfg.py
+  507  cd test/
+  508  cmsRun scDQM_dqm_cfg.py
+  509  pwd
+  510  voms-proxy-init --voms cms --valid 192:00
+  511  echo $VOMS_USERCONF
+  512  source /cvmfs/cms.cern.ch/cmsset_default.sh
+  513  echo $VOMS_USERCONF
+  514  ls /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses
+  515  ls /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses 
+  516  export VOMS_USERCONF=/cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses
+  517  voms
+  518  voms-proxy-init --voms cms --valid 192:00
+  519  echo $VOMS_USERCONF 
+  520  cp -r chuh@lxplus.cern.ch:~/.globus .
+  521  scp -r chuh@lxplus.cern.ch:~/.globus .
+  522  ls
+  523  voms-proxy-init --voms cms --valid 192:00
+  524  echo $VOMS_USERCONF 
+  525  voms-proxy-init --vom
+  526  voms-proxy-init --voms cms --valid 192:00 --vomsdir .globus/
+  527  chmod 600 .globus/*
+  528  voms-proxy-init --voms cms --valid 192:00 --vomsdir .globus/
+  529  pwd
+  530  ll .globus/
+  531  vi .globus/userkey.pem 
+  532  voms-proxy-init --voms cms --valid 192:00 --vomsdir /root/.globus/
+  533  voms-proxy-init --voms cms --valid 192:00 --vomsdir /root/.globus/ --vomses /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses
+  534  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem --vomsdir /root/.globus/vomses
+  535  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem --vomsdir /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses
+  536  ls /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses
+  537  ls /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses/
+  538  ls /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses 
+  539  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem --vomsdir /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/
+  540  vi /cvmfs/oasis.opensciencegrid.org/mis/osg-wn-client/3.6/3.6.240627-1/el7-x86_64/etc/vomses
+  541  scp -r chuh@lxplus.cern.ch:/etc/vomses .
+  542  ls
+  543  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem --vomsdir /root/
+  544  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem --vomsdir /root/vomses/
+  545  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem --vomsdir /root/
+  546  mkdir .voms
+  547  mv vomses .voms/
+  548  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem
+  549  chmod 644 /root/.globus/usercert.pem
+  550  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem
+  551  openssl verify -CApath /etc/grid-security/certificates usercert.pem
+  552  openssl verify -CApath /etc/grid-security/certificates /root/.globus/usercert.pem
+  553  voms-proxy-init --voms cms --valid 192:00 --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem
+  554   voms-proxy-init --voms cms 
+  555  export VOMS_CLIENTS_JAVA_OPTIONS=-Xxm2m
+  556   voms-proxy-init --voms cms 
+  557  export VOMS_CLIENTS_JAVA_OPTIONS=
+  558   voms-proxy-init --voms cms 
+  559  ls /etc/
+  560  ls /etc/grid-security/
+  561  ls /etc/grid-security/certificates/
+  562  scp chuh@lxplus.cern.ch:/etc/grid-security/certificates/* /etc/grid-security/certificates/
+  563   voms-proxy-init --voms cms 
+  564  ls
+  565  cd CMSSW_14_1_0_pre1/src/DQM/L1SMonitor/
+  566  ls
+  567  vi test/testL1SMonitor.py 
+  568  root -l root://cms-xrd-global.cern.ch//store/data/Run2018A/EGamma/NANOAOD/UL2018_MiniAODv2_NanoAODv9-v1/270000/00B7FFB1-3455-C941-AE3B-CF7085966A41.root 
+  569  cmsenv
+  570  root -l root://cms-xrd-global.cern.ch//store/data/Run2018A/EGamma/NANOAOD/UL2018_MiniAODv2_NanoAODv9-v1/270000/00B7FFB1-3455-C941-AE3B-CF7085966A41.root
+  571  exi
+  572  exit
+  573   voms-proxy-init --voms cms 
+  574  exit
+  575  ls
+  576  cd CMSSW_14_1_0_pre1/
+  577  ls
+  578  cd python/
+  579  ls
+  580  cd scDQM/
+  581  ls
+  582  cd scDQM/
+  583  ls
+  584  cd ..
+  585  ls
+  586  rm -rf scDQM/
+  587  cd DQM
+  588  ls
+  589  cd L1Scouting/
+  590  ls
+  591  cd ..
+  592  ls
+  593  history
+  594  ls
+  595  ls L1Scouting/
+  596  cd ..
+  597  cd src/
+  598  ls
+  599  cd DQM
+  600  ls
+  601  cd L1Scouting/
+  602  ls
+  603  cd python/
+  604  ls
+  605  cp -r SITECONF/  ../../../../../
+  606  cd ../../../../../
+  607  ls
+  608  cd CMSSW_14_1_0_pre1/src/
+  609  ls
+  610  cd DQM/L1Scouting/
+  611  ls
+  612  cd ..
+  613  ls
+  614  cd L1Scouting/
+  615  ls
+  616  cd ..
+  617  cp -r L1Scouting/ ../../../
+  618  ls
+  619  rm -rf L1Scouting/
+  620  cd ..
+  621  scram b clean
+  622  source /cvmfs/cms.cern.ch/cmsset_default.sh
+  623  scram b clean
+  624  cd ..
+  625  cd pu
+  626  ls
+  627  cd src/
+  628  ls
+  629  cd ..
+  630  ls
+  631  cd src/
+  632  ls
+  633  cd DQM
+  634  git cms-addpkg DQM/Integration --ssh
+  635  cd ..
+  636  git cms-addpkg DQM/Integration --ssh
+  637  source /cvmfs/cms.cern.ch/cmsset_default.sh
+  638  cmsenv
+  639  git cms-addpkg DQM/Integration --ssh
+  640  ls
+  641  cd DQM
+  642  ls
+  643  mkdir L1SMonitor
+  644  cd L1SMonitor/
+  645  ls
+  646  cd ..
+  647  ls
+  648  rm -rf L1SMonitor/
+  649  mkedanlzr L1SMonitor
+  650  cd L1SMonitor/
+  651  ls
+  652  cd plugins/
+  653  ls
+  654  cd ..
+  655  ls
+  656  cdÃ
+  657  ls
+  658  cd
+  659  ls
+  660  cd SITECONF/
+  661  ls
+  662  cd local/
+  663  ls
+  664  cd JobConfig/
+  665  ls
+  666  pwd
+  667  cd
+  668  cd CMSSW_14_1_0_pre1/src/
+  669  cmsenv
+  670  scramv1 b
+  671  ls
+  672  cd DQM
+  673  ls
+  674  cd L1SMonitor/
+  675  ls
+  676  scramv1 b
+  677  export SITECONFIG_PATH=/root/SITECONF/local/
+  678* 
+  679  cd test/
+  680  ls
+  681  cp ../../../../../L1Scouting/python/run380074_ls1360_streamL1ScoutingSelection.root .
+  682  ls
+  683  vim testL1SMonitor.py 
+  684  cmsRun testL1SMonitor.py 
+  685  cd ..
+  686  cd L1SMonitor/
+  687  scramv1 b
+  688  ls
+  689  cd python/
+  690  ls
+  691  cd ..
+  692  cd test/
+  693  ls
+  694  cmsRun testL1SMonitor.py 
+  695  ls
+  696  cmsRun testL1SMonitor.py 
+  697  cd ..
+  698  scramv1 b
+  699  cd test/
+  700  cmsRun testL1SMonitor.py 
+  701  ls
+  702  cmsRun testL1SMonitor.py 
+  703  ls
+  704  cmsRun testL1SMonitor.py 
+  705  ls
+  706  cd ..
+  707  scram b -j4
+  708  cd L1SMonitor/test/
+  709  ls
+  710  vim testL1SMonitor.py 
+  711  cmsRun testL1SMonitor.py 
+  712  ls
+  713  cmsRun testL1SMonitor.py 
+  714  ls
+  715  cd ./output
+  716  cmsRun testL1SMonitor.py 
+  717  ls
+  718  cmsRun testL1SMonitor.py 
+  719  ls
+  720  cmsRun testL1SMonitor.py 
+  721  ls
+  722  cmsRun testL1SMonitor.py 
+  723  cd ..
+  724  ls
+  725  cd ..
+  726  ls
+  727  cp -r L1SMonitor/ /afs/cern.ch/user/s/sagiorge/private/CMSSW_14_1_0_pre1/src/
+  728  ls
+  729  cd L1SMonitor/
+  730  ls
+  731  cd test/
+  732  ls
+  733  rm run380074_ls1360_streamL1ScoutingSelection.root 
+  734  xrdcp  root://xrootd-cms.infn.it///store/data/Run2024D/L1Scouting/L1SCOUT/v1/000/380/346/00000/cc332979-2afa-48f9-b02e-cfca4d3a22d7.root
+  735  xrdcp  root://xrootd-cms.infn.it///store/data/Run2024D/L1Scouting/L1SCOUT/v1/000/380/346/00000/cc332979-2afa-48f9-b02e-cfca4d3a22d7.root .
+  736  mv //afs/cern.ch/user/s/sagiorge/cc332979-2afa-48f9-b02e-cfca4d3a22d7.root .
+  737  ls
+  738  mv cc332979-2afa-48f9-b02e-cfca4d3a22d7.root run380346_cc332979-2afa-48f9-b02e-cfca4d3a22d7.root
+  739  vim testL1SMonitor.py 
+  740  ls
+  741  cmsRun testL1SMonitor.py 
+  742  ls
+  743  cd output/
+  744  ls
+  745  cd run380346/
+  746  ls
+  747  cd ..
+  748  ls
+  749  mv run380346/ ../
+  750  ls
+  751  cd ..
+  752  ls
+  753  rm -rf output/
+  754  ls
+  755  ls run380346
+  756  cmsRun testL1SMonitor.py 
+  757  ls
+  758  ls run380346
+  759  cd run380346
+  760  ls
+  761  fastHadd convert -o run380346_ls0200_streamDQMHistograms.root run380346_ls0200_streamDQMHistograms.pb
+  762  ls
+  763  cp run380346_ls0200_streamDQMHistograms.root /afs/cern.ch/user/s/sagiorge/
+  764  ls
+  765  cd ..
+  766  ls
+  767  cd ..
+  768  ls
+  769  cd  ..
+  770  ls
+  771  git status
+  772  git branch -v
+  773  git remove -v
+  774  git remote -v
+  775  git remote add personal-origin https://github.com/giorgettisabrina/cmssw.git
+  776  git remote -v
+  777  git checkout -b l1sdqm
+  778  git push personal-origin from-CMSSW_14_1_0_pre1:l1sdqm
+  779  ls
+  780  cd DQM
+  781  ls
+  782  git add L1SMonitor/
+  783  git commit -m 'LNew 1DS DQM'
+  784  git add Integration/
+  785  git commit -m 'LNew 1DS DQM'
+  786  git push personal-origin l1sdqm
+  787  git add L1SMonitor/
+  788  git commit -m 'New 1DS DQM'
+  789  git push personal-origin l1sdqm
+  790  git config core.sparseCheckout false
+  791  git add L1SMonitor/
+  792  ls
+  793  git add L1SMonitor/
+  794  ls
+  795  cd L1SMonitor/
+  796  ls
+  797  cd test/
+  798  ls
+  799  mv run380346_cc332979-2afa-48f9-b02e-cfca4d3a22d7.root ../../../../../
+  800  cd ..
+  801  ls
+  802  git add L1SMonitor/
+  803  git commit -m 'Add L1SMonitor modules'
+  804  git push personal-origin l1sdqm
+  805  scramv1 b
+  806  cd
+  807  cd /fff/BU0/output/lookarea 
+  808  cd ..
+  809  ls
+  810  cd
+  811  ls
+  812  cd : /data/srv/state/dqmgui/online/ix128
+  813  cd /data/srv/state/dqmgui/online/ix128
+  814  ls
+  815  cd
+  816  cd /data/srv
+  817  ls
+  818  $PWD/current/config/dqmgui/manage -f online start "I did read documentation"
+  819  voms-proxy-init -voms cms -rfc
+  820  cd
+  821  ls
+  822  voms-proxy-init -voms cms -rfc
+  823  ls
+  824  cd CMSSW_14_1_0_pre1/src/
+  825  cmsenv
+  826  scramv1 b
+  827  ls
+  828  cd DQM
+  829  ls
+  830  cd Integration/
+  831  ls
+  832  cd python/
+  833  ls
+  834  cd clients/
+  835  ls
+  836  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 lumiPattern='*' > out 2>&1 &
+  837  ls
+  838  ls -lsh
+  839  vim out 
+  840  cd out 
+  841  mkdir upload
+  842  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 lumiPattern='*' > out 2>&1 &
+  843  ls -lsh
+  844  ls upload/
+  845  ls -lsh
+  846  ps aux | grep cmsRun
+  847  jobs
+  848  ls -lsh
+  849  vim out 
+  850  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 dataset=auto lumi=200 > out 2>&1 &
+  851  jobs
+  852  ls -lsh
+  853  jobs
+  854  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 dataset=auto > out 2>&1 &
+  855  ls -lsh
+  856  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 dataset=auto minLumi=200 maxLumi=203 > out 2>&1 &
+  857  ls -lsh
+  858  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 minLumi=200 maxLumi=203 > out 2>&1 &
+  859  ls -lsh
+  860  jobs
+  861  ls -lsh
+  862  ls upload/
+  863  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 minLumi=200 maxLumi=203 dataset=/L1Scouting/Run2024D-v1/L1SCOUT > out 2>&1 &
+  864  ls upload/
+  865  ls -lsh
+  866  jobs
+  867  ls -lsh
+  868  jobs
+  869  ls -lsh
+  870  dasgoclient --query 'dataset =  dataset=/L1Scouting/Run2024D-v1/L1SCOUT run=380348 lumi=200'
+  871  cd
+  872  sudo yum install voms-clients
+  873  voms-proxy-info
+  874  voms-proxy-init -voms cms -rfc
+  875  ls
+  876  mkdir tmp
+  877  cp /afs/cern.ch/user/s/sagiorge/.globus/usercert.pem ~/.globus/ tmp/
+  878  ls
+  879  ls tmp/
+  880  cd tmp/
+  881  ls
+  882  rm usercert.pem 
+  883  cd ..
+  884  cd tmp/
+  885  cp -r /afs/cern.ch/user/s/sagiorge/.globus/ .
+  886  ls
+  887  cd ..
+  888  ls
+  889  cd tmp/
+  890  ls
+  891  cp /afs/cern.ch/user/s/sagiorge/.globus .
+  892  cp -r /afs/cern.ch/user/s/sagiorge/.globus .
+  893  ls
+  894  cd ..
+  895  ls
+  896  rm -r tmp/
+  897  ls
+  898  cp -r /afs/cern.ch/user/s/sagiorge/.globus/ .
+  899  ls .globus/
+  900  cp /afs/cern.ch/user/s/sagiorge/tmp .
+  901  cp -r /afs/cern.ch/user/s/sagiorge/tmp .
+  902  ls
+  903  ls tmp/
+  904  ls
+  905  cd ..
+  906  voms-proxy-init -voms cms -rfc
+  907  sudo yum install ca-certificates
+  908  sudo yum install fetch-crl
+  909  sudo mkdir -p /etc/grid-security/certificates
+  910  sudo fetch-crl
+  911  ls /etc/grid-security/certificates
+  912  voms-proxy-init -voms cms -rfc
+  913  cd ~
+  914  mkdir .globus
+  915  cd ~/.globus
+  916  ls
+  917  chmod 400 userkey.pem
+  918  chmod 400 usercert.pem
+  919  oms-proxy-init --rfc --voms cms -valid 192:00
+  920  voms-proxy-init --rfc --voms cms -valid 192:00
+  921        rm -f usercert.pem
+  922  rm -f userkey.pem
+  923  openssl pkcs12 -in mycert3.p12 -clcerts -nokeys -out usercert.pem
+  924  openssl pkcs12 -in mycert.p12
+  925  openssl pkcs12 -in mycert3.p12 -nocerts -out userkey.pem
+  926  chmod 400 userkey.pem
+  927  chmod 400 usercert.pem
+  928        voms-proxy-init --rfc --voms cms -valid 192:00
+  929  history
+  930  exit
+  931  voms-proxy-init --voms cms --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem
+  932        voms-proxy-init --rfc --voms cms -valid 192:00
+  933  exit
+  934  ls
+  935  voms-proxy-init --voms cms --cert /root/.globus/usercert.pem --key /root/.globus/userkey.pem
+  936  history
+  937  dasgoclient --query 'dataset =  dataset=/L1Scouting/Run2024D-v1/L1SCOUT run=380348 lumi=200'
+  938  ls
+  939  cd CMSSW_14_1_0_pre1/src/
+  940  source /cvmfs/cms.cern.ch/cmsset_default.sh
+  941  cmsenv
+  942  dasgoclient --query 'dataset =  dataset=/L1Scouting/Run2024D-v1/L1SCOUT run=380348 lumi=200'
+  943  dasgoclient --query 'file dataset=/L1Scouting/Run2024D-v1/L1SCOUT run=380348 lumi=200'
+  944  scramv1 b
+  945  ls
+  946  cd DQM
+  947  ls
+  948  cd L1SMonitor/
+  949  ls
+  950  cd python/
+  951  ls
+  952  cd ..
+  953  ls
+  954  cd ..
+  955  ls
+  956  cd Integration/
+  957  ls
+  958  cd python/
+  959  ls
+  960  cd clients/
+  961  ls
+  962  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 minLumi=200 maxLumi=203 dataset=/L1Scouting/Run2024D-v1/L1SCOUT
+  963  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346 minLumi=200 maxLumi=209 dataset=/L1Scouting/Run2024D-v1/L1SCOUT
+  964  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346
+  965  jobs
+  966  ls /dqmdata/
+  967  cd
+  968  ls
+  969  cd /dqmdata/
+  970  ls
+  971  cd /data/
+  972  ls
+  973  cd srv/
+  974  ls
+  975  cd
+  976  ls
+  977  cd ..
+  978  ls
+  979  cd dqmdata/
+  980  ls
+  981  cd /CMSSW_14_1_0_pre1/src/DQM/Integration/python/clients
+  982  cd
+  983  cd /CMSSW_14_1_0_pre1/src/DQM/Integration/python/clients
+  984  ls
+  985  cd CMSSW_14_1_0_pre1/src/DQM/Integration/python
+  986  cd ..
+  987  cd L1SMonitor/python/
+  988  ls
+  989  cd ..
+  990  cd test/
+  991  ls
+  992  cp -r run380346 /dqmdata/
+  993  cd /dqmdata
+  994  ls
+  995  cd 
+  996  cd CMSSW_14_1_0_pre1/src/DQM/Integration/python   
+  997  ls
+  998  cd clients/
+  999  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346
+ 1000  exit
+ 1001  ls
+ 1002  locmap --enable eosclient
+ 1003  locmap --configure eosclient
+ 1004  cd /eos/user/s/sagiorge
+ 1005  cd
+ 1006  ls
+ 1007  cd
+ 1008  cd ..
+ 1009  ls
+ 1010  cd dqmdata/
+ 1011  ls
+ 1012  cd run380346/
+ 1013  ls
+ 1014  ls /dqmdata/run380346/
+ 1015  cd
+ 1016  ls /dqmdata/run380346/
+ 1017  cd /dqmdata/run380346/
+ 1018  ls
+ 1019  rm run380346_ls0200_streamDQMHistograms.root
+ 1020  cd 
+ 1021  ls /data/srv/state/dqmgui/online/data/OnlineData/
+ 1022  cd CMSSW_14_1_0_pre1/src/
+ 1023  source /cvmfs/cms.cern.ch/cmsset_default.sh
+ 1024  cmsenv
+ 1025  scramv1 b
+ 1026  cd DQM/Integration/python/clients/
+ 1027  ls
+ 1028  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346
+ 1029  ls
+ 1030  ls -lsh
+ 1031  rm upload/
+ 1032  rm -rf upload/
+ 1033  ls pb/
+ 1034  ls pb/run380346/
+ 1035  cd ../../../../
+ 1036  ls
+ 1037  cd DQM/L1SMonitor/test/
+ 1038  ls
+ 1039  vim testL1SMonitor.py 
+ 1040  cmsRun testL1SMonitor.py 
+ 1041  ls
+ 1042  export SITECONFIG_PATH=/root/SITECONF/local/
+ 1043  cmsRun testL1SMonitor.py 
+ 1044  xrdcp /store/data/Run2024D/L1Scouting/L1SCOUT/v1/000/380/348/00000/5091b91c-c523-4b1b-a21a-485d2010e4a7.root  .
+ 1045  xrdcp root://xrootd-cms.infn.it//store/data/Run2024D/L1Scouting/L1SCOUT/v1/000/380/348/00000/5091b91c-c523-4b1b-a21a-485d2010e4a7.root  .
+ 1046  vim testL1SMonitor.py 
+ 1047  cmsRun testL1SMonitor.py 
+ 1048  vim testL1SMonitor.py 
+ 1049  cmsRun testL1SMonitor.py 
+ 1050  ls
+ 1051  rm -rf run380348
+ 1052  vim testL1SMonitor.py 
+ 1053  ls
+ 1054  cmsRun testL1SMonitor.py 
+ 1055  ls
+ 1056  ls run380346/
+ 1057  cp -r run380346/ /dqmdata/
+ 1058  cd ..
+ 1059  ls
+ 1060  cd Integration/python/clients/
+ 1061  ls
+ 1062  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346
+ 1063  ls
+ 1064  ls -lsh
+ 1065  rm DQM_V0001_L1SMonitor_R000380346.root
+ 1066  rm DQM_V0001_L1SMonitor_R000380346.root.origin
+ 1067  ls pb/
+ 1068  cd pb/
+ 1069  ls
+ 1070  ls -lsh
+ 1071  Ãls run380346/
+ 1072  ls
+ 1073  ls run380346/
+ 1074  cd run380346/
+ 1075  ls
+ 1076  cd /dqmdata/run380346/
+ 1077  ls
+ 1078  mkdir 0
+ 1079  mv Ãrun380346_ls001*_streamDQMHistograms.jsn 0/
+ 1080  ls
+ 1081  mv Ã*.jsn 0/
+ 1082  ls
+ 1083  mv run380346_ls0001_streamDQMHistograms.jsn 0/run380346_ls0001_streamDQMHistograms.jsn
+ 1084  ls
+ 1085  mv *.pb 0/
+ 1086  ls
+ 1087  mv *.jsn 0/
+ 1088  ls
+ 1089  rm run380346_ls0200_streamDQMHistograms.root
+ 1090  ls 0/
+ 1091  cd
+ 1092  cd CMSSW_14_1_0_pre1/src/DQM/Integration/python/clients/
+ 1093  ls
+ 1094  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346
+ 1095  cd
+ 1096  cd /dqmdata/
+ 1097  ls
+ 1098  cd run380346/
+ 1099  ls
+ 1100  cd 0/
+ 1101  mv Ã* ../
+ 1102  ls
+ 1103  mv *.pb ../
+ 1104  mv Ã*.jsn ../
+ 1105  ls
+ 1106  mv *.jsn ../
+ 1107  ls
+ 1108  cd ..
+ 1109  ls
+ 1110  rm -r 0/
+ 1111  ls
+ 1112  cd
+ 1113  cd CMSSW_14_1_0_pre1/src/DQM/Integration/python/clients/
+ 1114  ls
+ 1115  ls -lsh
+ 1116  rm pb/
+ 1117  ls pb/run380346/
+ 1118  history
+ 1119  history | grep visDQMUpload
+ 1120  clear
+ 1121  ls
+ 1122  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346
+ 1123  ls
+ 1124  ls -lsh
+ 1125  ls upload/
+ 1126  ls upload/pb/
+ 1127  ls upload/pb/run380346/
+ 1128  rm -rf pb/
+ 1129  ls
+ 1130  ls upload/
+ 1131  ls
+ 1132  cp DQM_V0001_L1SMonitor_R000380346.root /afs/cern.ch/user/s/sagiorge
+ 1133  cd upload/
+ 1134  ls
+ 1135  cp DQM_V0001_L1SMonitor_R000380346.root /afs/cern.ch/user/s/sagiorge/
+ 1136  ls
+ 1137  sudo cp DQM_V0001_L1SMonitor_R000380346.root /afs/cern.ch/user/s/sagiorge/
+ 1138  root -l
+ 1139  cd ..
+ 1140  ls
+ 1141  history | grep 379138
+ 1142  history | hlt_dqm_clientPB-live_cfg.py
+ 1143  echo $HISTSIZE
+ 1144  echo $HISTFILESIZE
+ 1145  nano ~/.bashrc
+ 1146  vim ~/.bashrc
+ 1147  cat ~/.bash_profile
+ 1148  cat ~/.profile
+ 1149  export HISTSIZE=10000
+ 1150  export HISTFILESIZE=10000
+ 1151  source ~/.bashrc
+ 1152  echo $HISTSIZE
+ 1153  history | grep hlt_dqm_clientPB-live
+ 1154  cmsRun hlt_dqm_clientPB-live_cfg.py 
+ 1155  cmsRun hlt_dqm_clientPB-live_cfg.py runNumber=379138
+ 1156  ls
+ 1157  ls upload/
+ 1158  cmsRun hl1s_dqm_clientPB-live_cfg.py
+ 1159  cmsRun hl1s_dqm_clientPB-live_cfg.py runNumber=380346
+ 1160  ls -lsh
+ 1161  ls upload/
+ 1162  rm out
+ 1163  history
+ 1164  ls
+ 1165  history > h.txt
