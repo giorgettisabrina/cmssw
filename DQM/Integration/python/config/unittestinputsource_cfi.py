@@ -99,6 +99,7 @@ for ls in range(options.minLumi, options.maxLumi+1):
     readFiles.extend(read)
     secFiles.extend(sec)
 
+"""
     # Get last eventsPerLumi of events in this file
     command = "edmFileUtil --events %s | tail -n +9 | head -n -5 | awk '{ print $3 }'" % read[0]
     print(command)
@@ -111,13 +112,14 @@ for ls in range(options.minLumi, options.maxLumi+1):
     eventsToProcess.append("%s:%s:%s-%s:%s:%s" % (options.runNumber, ls, events[0], options.runNumber, ls, events[-1]))
 
 eventRange = cms.untracked.VEventRange(eventsToProcess)
+"""
 
 print("Got %d files." % len(readFiles))
 
 source = cms.Source ("PoolSource",
                      fileNames = readFiles,
                      secondaryFileNames = secFiles,
-                     eventsToProcess = eventRange,
+                     #eventsToProcess = eventRange,
                      ### As we are testing with FEVT, we don't want any unpacked collection
                      ### This makes the tests slightly more realistic (live production uses streamer files
                      inputCommands = cms.untracked.vstring(

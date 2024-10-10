@@ -8,7 +8,7 @@ def loadDQMRunConfigFromFile():
     conf_locations = [
         "/etc/dqm_run_config",
         #os.path.expanduser("~/.dqm_run_config"),
-        os.path.join(os.curdir, "dqm_run_config"),
+        os.path.join(os.curdir, "~/.dqm_run_config"),
     ]
     
     config = ConfigParser.ConfigParser()
@@ -24,6 +24,7 @@ dqmRunConfigDefaults = {
         type = cms.untracked.string("userarea"),
         collectorPort = cms.untracked.int32(9190),
         collectorHost = cms.untracked.string('127.0.0.1'),
+
     ),
     'playback': cms.PSet(
         type = cms.untracked.string("playback"),

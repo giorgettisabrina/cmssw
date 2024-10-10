@@ -15,19 +15,20 @@ options.register('runNumber',
                  "Run number.")
 
 options.register('datafnPosition',
-                 3, # default value
+                 3, # default value 3 
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.int,
                  "Data filename position in the positional arguments array 'data' in json file.")
 
 options.register('runInputDir',
-                 '/tmp',
+                 #'/tmp',
+                 '/dqmdata',
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.string,
                  "Directory where the DQM files will appear.")
 
 options.register('scanOnce',
-                 False, # default value
+                 False, # default value #False
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.bool,
                  "Don't repeat file scans: use what was found during the initial scan. EOR file is ignored and the state is set to 'past end of run'.")
@@ -67,13 +68,17 @@ options.register('runUniqueKey',
 # Note, the other clients do not use this input parameter
 
 options.register('outputBaseDir',
-                 '/fff/BU0/output',
+                 #'/fff/BU0/output',
+                 '/data/srv/state/dqmgui/online/data/OnlineData/',
                  VarParsing.VarParsing.multiplicity.singleton,
                  VarParsing.VarParsing.varType.string,
                  "Directory where the visualization output files will appear.")
 
 
 options.parseArguments()
+
+print("Run Number:", options.runNumber)
+print("Input Directory:", options.runInputDir)
 
 # Fix to allow scram to compile
 #if len(sys.argv) > 1:
@@ -86,7 +91,7 @@ if not options.runkey.strip():
 runType.setRunType(options.runkey.strip())
 
 # Input source
-nextLumiTimeoutMillis = 120000
+nextLumiTimeoutMillis = 150000
 endOfRunKills = True
 
 if options.scanOnce:
@@ -99,7 +104,7 @@ source = cms.Source("DQMProtobufReader",
     streamLabel = cms.untracked.string('streamDQMHistograms'),
     scanOnce = cms.untracked.bool(options.scanOnce),
     datafnPosition = cms.untracked.uint32(options.datafnPosition),
-    delayMillis = cms.untracked.uint32(500),
+    delayMillis = cms.untracked.uint32(1000),
     nextLumiTimeoutMillis = cms.untracked.int32(nextLumiTimeoutMillis),
     skipFirstLumis = cms.untracked.bool(options.skipFirstLumis),
     deleteDatFiles = cms.untracked.bool(False),
