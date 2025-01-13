@@ -19,23 +19,11 @@ process.options = cms.untracked.PSet(wantSummary = cms.untracked.bool(True))
 process.source = cms.Source("PoolSource",
   #fileNames = cms.untracked.vstring(options.inputFiles)
   #fileNames = cms.untracked.vstring('')
-  # AXO
-  #fileNames = cms.untracked.vstring('root://cms-xrd-global.cern.ch///store/data/Run2024G/L1Scouting/L1SCOUT/v1/000/384/383/00000/95ff3cbe-9cb3-4c4c-aaf4-d51951ab71ee.root')
-  #fileNames = cms.untracked.vstring('root://cms-xrd-global.cern.ch//store/data/Run2024E/L1Scouting/L1SCOUT/v1/000/381/148/00000/00aecc5b-cef8-447b-b0c6-3ae8739fa234.root')
-  # COMPRESSION
-  #run 385515 lumi 654
-  #fileNames = cms.untracked.vstring('root://cms-xrd-global.cern.ch//store/data/Run2024G/L1Scouting/L1SCOUT/v1/000/385/515/00000/00da4b59-78c2-40fc-b191-e3219f031e92.root')
-  #run 385515 lumi 655
-  #fileNames = cms.untracked.vstring('root://cms-xrd-global.cern.ch//store/data/Run2024G/L1Scouting/L1SCOUT/v1/000/385/515/00000/a7a811f8-3518-4e2e-ab87-0091f4824ad6.root')
-  #run 385515 lumi 656
-  #fileNames = cms.untracked.vstring('root://cms-xrd-global.cern.ch//store/data/Run2024G/L1Scouting/L1SCOUT/v1/000/385/515/00000/88768aa4-0394-4435-bc90-4f2daf6a5daa.root')
   #MENUSTUDIES
   #run386604 lumi 100 
   fileNames = cms.untracked.vstring('root://cms-xrd-global.cern.ch//store/data/Run2024I/L1Scouting/L1SCOUT/v1/000/386/604/00000/81ad0277-e7c0-42a2-bfd6-195f50c92223.root')
   #run386604 lumi 101
   #fileNames = cms.untracked.vstring('root://cms-xrd-global.cern.ch//store/data/Run2024I/L1Scouting/L1SCOUT/v1/000/386/604/00000/4323e051-55e9-4260-bea7-34c51c976a8a.root')
-  #run386604 lumi 102 
-  #fileNames = cms.untracked.vstring('root://cms-xrd-global.cern.ch//store/data/Run2024I/L1Scouting/L1SCOUT/v1/000/386/604/00000/8d679f24-cbba-49ff-a4d8-913a09877e40.root')
   #link: https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fglobal&input=file+dataset%3D%2FL1Scouting%2FRun2024I-v1%2FL1SCOUT+run%3D386604+lumi%3D102
 )
 
