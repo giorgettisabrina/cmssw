@@ -65,4 +65,15 @@
   <class name="alpaka_rocm_async::l1sc::SoftTauOutputDeviceTensor" persistent="false"/>
   <class name="edm::DeviceProduct<alpaka_rocm_async::l1sc::SoftTauOutputDeviceTensor>" persistent="false"/>
   <class name="edm::Wrapper<edm::DeviceProduct<alpaka_rocm_async::l1sc::SoftTauOutputDeviceTensor>>" persistent="false"/>
+
+
+  <!-- TokenInputDeviceTensor -->
+  <class name="alpaka_rocm_async::l1sc::TokenInputDeviceTensor" persistent="false"/>
+  <class name="edm::DeviceProduct<alpaka_rocm_async::l1sc::TokenInputDeviceTensor>" persistent="false"/>
+  <class name="edm::Wrapper<edm::DeviceProduct<alpaka_rocm_async::l1sc::TokenInputDeviceTensor>>" persistent="false"/>
+
+  <!-- TokenOutputDeviceTensor -->
+  <class name="alpaka_rocm_async::l1sc::TokenOutputDeviceTensor" persistent="false"/>
+  <class name="edm::DeviceProduct<alpaka_rocm_async::l1sc::TokenOutputDeviceTensor>" persistent="false"/>
+  <class name="edm::Wrapper<edm::DeviceProduct<alpaka_rocm_async::l1sc::TokenOutputDeviceTensor>>" persistent="false"/>
 </lcgdict>
